@@ -276,7 +276,7 @@ def click_piece(event):
 					win = False
 
 		if win:
-			game_over(status = 'win')
+			game_over(status='win')
 
 		display()
 		display_clock_score()
