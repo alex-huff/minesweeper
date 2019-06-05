@@ -315,8 +315,7 @@ def get_new_board(no_bees):
 
 def start():
 	display()
-	print('test')
-	
+
 	while True:
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
@@ -326,7 +325,8 @@ def start():
 
 		if minesweeper.clicked_yet and time.time() - minesweeper.start_time >= minesweeper.seconds:
 			minesweeper.seconds += 1
-			display_clock_score()
+			
+		display_clock_score()
 
 		minesweeper.fps.tick(30)
 
