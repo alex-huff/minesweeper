@@ -315,7 +315,8 @@ def get_new_board(no_bees):
 
 def start():
 	display()
-
+	print('test')
+	
 	while True:
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
